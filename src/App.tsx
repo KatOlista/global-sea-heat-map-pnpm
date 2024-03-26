@@ -1,10 +1,15 @@
 // import viteLogo from '/vite.svg';
-import './App.css';
+import { Header, Footer } from './components';
+import styles from './App.module.scss';
 
 export const App = () => {
   return (
-    <>
-      <div></div>
-    </>
+    <div className={styles.app}>
+      <Header />
+
+      <main className={styles.app__main}></main>
+
+      <Footer />
+    </div>
   );
 };
