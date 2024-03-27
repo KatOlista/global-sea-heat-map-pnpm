@@ -1,5 +1,4 @@
-// import viteLogo from '/vite.svg';
-import { Header, Footer } from './components';
+import { Header, Footer, Map } from './components';
 import styles from './App.module.scss';
 
 export const App = () => {
@@ -7,7 +6,9 @@ export const App = () => {
     <div className={styles.app}>
       <Header />
 
-      <main className={styles.app__main}></main>
+      <main className={styles.app__main}>
+        <Map />
+      </main>
 
       <Footer />
     </div>

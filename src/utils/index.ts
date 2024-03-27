@@ -1,0 +1,1 @@
+export { handleExportMapAsImg } from './handleExportMapAsImg';

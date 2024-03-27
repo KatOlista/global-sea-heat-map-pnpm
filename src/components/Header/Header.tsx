@@ -1,3 +1,4 @@
+import { handleExportMapAsImg } from '../../utils';
 import styles from './Header.module.scss';
 
 export const Header = () => {
@@ -26,7 +27,12 @@ export const Header = () => {
       <h1 className={styles.header__title}>Global sea heat map</h1>
 
       <div className={styles.header__section}>
-        <button className={styles.header__button}>Export map</button>
+        <button
+          className={styles.header__button}
+          onClick={handleExportMapAsImg}
+        >
+          Export map
+        </button>
       </div>
     </header>
   );
